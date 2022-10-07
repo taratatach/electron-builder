@@ -42,6 +42,7 @@
   "///": "All dependencies for all packages (hoisted)",
   "////": "All typings are added into root `package.json` to avoid duplication errors in the IDE compiler (several `node.d.ts` files).",
   "dependencies": {
+    "config-file-ts": "^0.2.4",
     "dmg-license": "1.0.11"
   },
   "devDependencies": {
@@ -79,7 +80,8 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@changesets/cli@2.19.0": "patches/@changesets__cli@2.19.0.patch"
+      "@changesets/cli@2.19.0": "patches/@changesets__cli@2.19.0.patch",
+      "read-config-file@6.2.0": "patches/read-config-file@6.2.0.patch"
     }
   }
 }

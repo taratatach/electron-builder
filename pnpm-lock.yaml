@@ -4,6 +4,9 @@ patchedDependencies:
   '@changesets/cli@2.19.0':
     hash: gpad3hme2oppiguycfylt6i6ey
     path: patches/@changesets__cli@2.19.0.patch
+  read-config-file@6.2.0:
+    hash: hz5smtams26jgrdjpypzoc7g2u
+    path: patches/read-config-file@6.2.0.patch
 
 importers:
 
@@ -16,6 +19,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 4.33.0
       '@typescript-eslint/parser': 4.33.0
       catharsis: 0.9.0
+      config-file-ts: ^0.2.4
       conventional-changelog-cli: 2.1.1
       dmd: 6.0.0
       dmg-license: 1.0.11
@@ -38,6 +42,7 @@ importers:
       typescript-json-schema: 0.51.0
       v8-compile-cache: 2.3.0
     dependencies:
+      config-file-ts: 0.2.4
       dmg-license: 1.0.11
     devDependencies:
       '@babel/plugin-transform-modules-commonjs': 7.15.4
@@ -4651,6 +4656,13 @@ packages:
       typedarray: 0.0.6
     dev: true
 
+  /config-file-ts/0.2.4:
+    resolution: {integrity: sha512-cKSW0BfrSaAUnxpgvpXPLaaW/umg4bqg4k3GO1JqlRfpx+d5W0GDXznCMkWotJQek5Mmz1MJVChQnz3IVaeMZQ==}
+    dependencies:
+      glob: 7.2.0
+      typescript: 4.3.5
+    dev: false
+
   /config-master/3.1.0:
     resolution: {integrity: sha1-ZnZjWQUFooO/JqSE1oSJ10xUhdo=}
     dependencies:
@@ -9187,7 +9199,7 @@ packages:
     dev: true
 
   /once/1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
+    resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
       wrappy: 1.0.2
 
@@ -9343,7 +9355,7 @@ packages:
     engines: {node: '>=8'}
 
   /path-is-absolute/1.0.1:
-    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
+    resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
 
   /path-key/2.0.1:
@@ -10860,7 +10872,6 @@ packages:
     resolution: {integrity: sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /typical/2.6.1:
     resolution: {integrity: sha1-XAgOXWYcu+OCWdLnCjxyU+hziB0=}
@@ -11157,7 +11168,7 @@ packages:
       strip-ansi: 6.0.1
 
   /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
   /write-file-atomic/3.0.3:
     resolution: {integrity: sha512-AvHcyZ5JnSfq3ioSyjrBkH9yW4m7Ayk8/9My/DD9onKeu/94fwrMocemO2QAJFAlnnDN+ZDS+ZjAR5ua1/PV/Q==}
